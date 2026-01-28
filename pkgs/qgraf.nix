@@ -9,8 +9,8 @@ stdenv.mkDerivation rec {
   version = "3.4.2";
 
   src = fetchurl {
-    url = "https://gosam.hepforge.org/gosam-installer/qgraf-${version}.tgz";
-    sha256 = lib.fakeSha256; # replace with the real hash
+    url = "https://github.com/lcnbr/qgraf-nix/releases/download/qgraf-3.4.2/qgraf-3.4.2.tgz";
+    sha256 = "sha256-z8Ap+4cceJQ4Ze+LUevNPNRChEi4gWcUsElmnf3quKo=";
   };
 
   nativeBuildInputs = [gfortran];
